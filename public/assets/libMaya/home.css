@@ -1,0 +1,309 @@
+/**
+ * Style ajouté pour Maya
+ * Author: MD
+ * https://mdbootstrap.com/docs/jquery/css/colors/
+ */
+
+/* personnalisation classes bootstrap */
+
+.bg-success {
+    background-color: #d46363 !important;
+    /* Red color */
+  }
+  
+  .btn-primary {
+    background-color: #cf4a4a;
+    /* Red color */
+    border-color: #a12929;
+    /* Darker red for border */
+  }
+  
+  .btn-primary:hover {
+    color: #fff;
+    background-color: #a12929;
+    /* Darker red on hover */
+    border-color: #870f0f;
+    /* Even darker red for border on hover */
+  }
+  
+  .table-hover tbody tr:hover {
+    font-weight: bolder;
+    background-color: #fbd6d6;
+    /* Light red on hover */
+  }
+  
+  .page-link {
+    color: #cf4a4a;
+    /* Red color */
+  }
+  
+  .page-item.active .page-link {
+    background-color: #cf4a4a;
+    /* Red color for active page link */
+  }
+  
+  .page-item.disabled .page-link {
+    color: #cf4a4a;
+    /* Red color for disabled page link */
+  }
+  
+  
+  /* personnalisation html */
+  body {
+    padding-top: 70px;
+  }
+  
+  h1 {
+    text-align: center;
+    text-shadow: 2px 2px 5px #cf4a4a;
+    /* Red color for text shadow */
+  }
+  
+  /* classes Maya */
+  
+  .bg-entete {
+    background-color: #ef9a9a;
+    /* Light red */
+  }
+  
+  .contenu {
+    background-color: #ffebee;
+    /* Very light red */
+    border: 2px solid #cf4a4a;
+    /* Red color for border */
+    border-radius: 6px;
+    line-height: 40px;
+    padding: 10px;
+  }
+  
+  .contenu-blanc {
+    background-color: white;
+    border: 2px solid #cf4a4a;
+    /* Red color for border */
+    border-radius: 6px;
+    line-height: 40px;
+    padding: 10px;
+  }
+  
+  .conteneur {
+    background-color: #ffebee;
+    /* Very light red */
+    border: 2px solid #cf4a4a;
+    /* Red color for border */
+    border-radius: 6px;
+    line-height: 25px;
+    font-family: Arial;
+    color: #bf8c8c;
+    /* Light red for text color */
+    padding: 20px;
+    width: 300px;
+    margin: 0 auto;
+    box-shadow: 5px 5px 10px #cf4a4a;
+    /* Red color for box shadow */
+  }
+  
+  h2 {
+    text-align: center;
+    text-shadow: 2px 2px 5px #cf4a4a;
+    /* Red color for text shadow */
+  }
+  
+  .temps-icone {
+    vertical-align: middle;
+    margin-right: 20px;
+  }
+  
+  .temps-previsions {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  span.temperature {
+    margin-left: 15px;
+  }
+  
+  /* ---------------------------------------------home page ------------ */
+  /* ---------------------------------------------home page ------------ */
+  /* ---------------------------------------------home page ------------ */
+  /* ---------------------------------------------home page ------------ */
+  
+  /* ---------------------------------------------home page ------------ */
+  /* Colors */
+  
+  body {
+    color: #fff;
+  }
+  
+  .home-h2 {
+    color: #000;
+  }
+  
+  .home-card {
+    background-color: #f8faf8;
+    border: 1px solid #eee;
+  }
+  
+  .home-card-title {
+    color: #000;
+  }
+  
+  .home-card-text {
+    color: #111111;
+  }
+  
+  /* Backgrounds */
+  
+  section#home-statistics {
+    background-color: #fff;
+  }
+  
+  section#home-contact {
+    background-color: #f8f9fa;
+  }
+  
+  /* Layout */
+  
+  body {
+    font-family: sans-serif;
+    font-size: 16px;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
+  section {
+    padding: 50px 0;
+  }
+  
+  .home-title {
+    font-family: Georgia, Times New Roman, serif;
+    font-size: 35px;
+    padding: 10px 0;
+    text-align: center;
+    color: rgb(255, 120, 120);
+  }
+  
+  .home-h2 {
+    margin-bottom: 20px;
+  }
+  
+  .home-card {
+    margin-bottom: 20px;
+  }
+  
+  form {
+    margin-top: 20px;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    margin-bottom: 20px;
+  }
+  
+  .home-card1 {
+    background-color: #f38481;
+    border: 1px solid #f38481;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00000033;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .home-card1:hover {
+    box-shadow: 0 0 20px rgb(243, 133, 129)
+  }
+  
+  .home-card2 {
+    background-color: #87ceeb;
+    border-radius: 10px;
+    border: 1px solid #87ceeb;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .home-card2:hover {
+    box-shadow: 0 0 20px rgb(137, 207, 235)
+  }
+  
+  .home-card3 {
+    background-color: #ffd39b;
+    border-radius: 10px;
+    border: 1px solid #ffd39b;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .home-card3:hover {
+    box-shadow: 0 0 20px rgb(255, 211, 153)
+  }
+  
+  .hover:hover {
+    cursor: pointer;
+  }
+  
+  .home-form {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  /* --------------------------------------home form-------------------
+  --------------------------------------home form-------------------
+  --------------------------------------home form------------------- */
+  .home-form {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 700px;
+    border: 3px solid rgb(243, 133, 129);
+    border-radius: 4px;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .home-form-label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: rgb(243, 133, 129);
+  }
+  
+  .home-form-control {
+    width: 100%;
+    padding: 10px 10px;
+    border: 2px solid rgb(243, 133, 129);
+    border-radius: 4px;
+  }
+  
+  
+  .home-form-control:focus {
+    border-color: rgb(243, 133, 129);
+  }
+  
+  .home-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: rgb(240, 102, 97);
+    border: 1px solid rgb(238, 106, 102);
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .home-button:hover {
+    background-color: rgb(251, 108, 103);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .home-button:hover {
+    background-color: rgb(255, 77, 71);
+  }
+  
+  
+  

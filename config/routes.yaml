@@ -3,3 +3,35 @@ controllers:
         path: ../src/Controller/
         namespace: App\Controller
     type: attribute
+
+home:
+    path: /home
+    controller: App\Controller\HomeController::index
+
+category:
+    path: /category
+    controller: App\Controller\CategoryController::index
+
+exam:
+    path: /exam
+    controller: App\Controller\ExamController::index
+
+grade:
+    path: /grade
+    controller: App\Controller\GradeController::index
+
+user:
+    path: /user
+    controller: App\Controller\UserController::index
+
+contact:
+    path: /contact
+    controller: App\Controller\ContactController::index
+
+register:
+    path: /register
+    controller: App\Controller\RegisterController::index
+
+login:
+    path: /login
+    controller: App\Controller\LoginController::index

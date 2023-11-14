@@ -1,0 +1,180 @@
+
+  ------------------
+  /**
+ * Style ajouté pour Maya
+ * Author: MD
+ * https://mdbootstrap.com/docs/jquery/css/colors/
+ */
+
+/* personnalisation classes bootstrap */
+
+.bg-success {
+  background-color: #d46363 !important; /* Red color */
+}
+
+.btn-primary {
+  background-color: #cf4a4a; /* Red color */
+  border-color: #a12929; /* Darker red for border */
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #a12929; /* Darker red on hover */
+  border-color: #870f0f; /* Even darker red for border on hover */
+}
+
+.table-hover tbody tr:hover {
+  font-weight: bolder;
+  background-color: #fbd6d6; /* Light red on hover */
+}
+
+.page-link {
+  color: #cf4a4a; /* Red color */
+}
+
+.page-item.active .page-link {
+  background-color: #cf4a4a; /* Red color for active page link */
+}
+
+.page-item.disabled .page-link {
+  color: #cf4a4a; /* Red color for disabled page link */
+}
+
+
+/* personnalisation html */
+body {
+  padding-top: 70px;
+}
+
+h1 {
+  text-align: center;
+  text-shadow: 2px 2px 5px #cf4a4a; /* Red color for text shadow */
+}
+
+/* classes Maya */
+
+.bg-entete {
+  background-color: #ef9a9a; /* Light red */
+}
+
+.contenu {
+  background-color: #ffebee; /* Very light red */
+  border: 2px solid #cf4a4a; /* Red color for border */
+  border-radius: 6px;
+  line-height: 40px;
+  padding: 10px;
+}
+
+.contenu-blanc {
+  background-color: white;
+  border: 2px solid #cf4a4a; /* Red color for border */
+  border-radius: 6px;
+  line-height: 40px;
+  padding: 10px;
+}
+
+.conteneur {
+  background-color: #ffebee; /* Very light red */
+  border: 2px solid #cf4a4a; /* Red color for border */
+  border-radius: 6px;
+  line-height: 25px;
+  font-family: Arial;
+  color: #bf8c8c; /* Light red for text color */
+  padding: 20px;
+  width: 300px;
+  margin: 0 auto;
+  box-shadow: 5px 5px 10px #cf4a4a; /* Red color for box shadow */
+}
+
+h2 {
+  text-align: center;
+  text-shadow: 2px 2px 5px #cf4a4a; /* Red color for text shadow */
+}
+
+.temps-icone {
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
+.temps-previsions {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+span.temperature {
+  margin-left: 15px;
+}
+/* -------------------- */
+.container {
+  width: 400px;
+  margin: auto;
+  padding: 36px 48px 48px 48px;
+  background-color: #f2efee;
+
+  border-radius: 11px;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+}
+
+.login-title {
+  padding: 15px;
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.login-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 16px;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 1.2rem;
+  border-radius: 9px;
+  border: none;
+}
+
+.login-form input:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(253, 242, 233, 0.5);
+}
+
+.btn--form {
+  background-color: #f48982;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 8px;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 9px;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.3s;
+}
+
+button {
+  outline: 1px solid #f48982;
+}
+
+.btn--form:hover {
+  background-color: #fdf2e9;
+  color: #f48982;
+}
+.customColor{
+  background-color: #f36056;
+  margin: 0 0 5rem 0;
+}

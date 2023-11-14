@@ -1,0 +1,78 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Exams
+{% endblock %}
+
+{% block body %}
+
+	<div class="col-lg-12  contenu-blanc shadow-lg">
+
+		<h1>Exams</h1>
+		<table class="table table-striped table-advance table-hover">
+			<thead>
+				<tr class="bg-entete">
+					<th class="col-md-1">Id</th>
+					<th>Name</th>
+					{% if is_granted('ROLE_ADMIN') %}
+						<th class="col-md-6">Actions<span class="pull-right">
+								<a href="{{ path('create_exam')}}" class="btn btn-primary btn-sm">
+									<i class="fa fa-save"></i>
+									Add new exam</a>
+							</span>
+						</th>
+					{% endif %}
+				</tr>
+				{% if button is defined %}
+					<button type="submit" class="btn btn-primary">
+						{{ button }}
+					</button>
+				{% endif %}
+				<div class="container-fluid contenu">
+					{% if not exams.items is same as ([]) %}
+						{#in case theres no data yet#}
+						There is
+						{{ exams.getTotalItemCount }}
+						exam!!
+					</thead><br>
+					<tbody>
+
+						{% for key, exam in exams %}
+							<tr>
+								<td>{{ exam.id }}</td>
+								<td>{{ exam.name }}</td>
+
+
+								<td
+									class="row">
+
+									<!-- formulaire pour demander la modification ou la suppression -->
+									{% if is_granted('ROLE_ADMIN') %}
+										<form>
+											<button type="submit" class="btn btn-primary btn-sm" formaction="{{ path('edit_exam',{id : exam.id}) }}" title="Edit">
+												<i title="Edit">
+													<i class="fa fa-pencil"></i>
+													Edit</button>
+												<button type="submit" class="btn btn-danger btn-sm" formaction="{{ path('delete_exam',{id : exam.id}) }}" title="Supprimer" onclick="return confirm('Do you really want to delete this exam ?');">
+													<i class="fa fa-trash-o "></i>
+													delete</button>
+												<input
+												type="hidden" name="_token" value="{{ csrf_token('action-item' ~ exam.id) }}">
+											{#  ~     pour concaténer des chaines en twig #}
+											</form>
+										{% endif %}
+									</td>
+								</td>
+							</tr>
+						{% endfor %}
+					</tbody>
+
+				</table>
+				<div class="d-flex justify-content-center">
+					{{ knp_pagination_render(exams) }}
+				</div>
+			{% else %}
+				there is no exams yet
+			{% endif %}
+		</div>
+	</div>
+{% endblock %}

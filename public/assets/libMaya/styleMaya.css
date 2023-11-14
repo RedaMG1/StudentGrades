@@ -1,0 +1,104 @@
+/**
+ * Style ajouté pour Maya
+ * Author: MD
+ * https://mdbootstrap.com/docs/jquery/css/colors/
+ */
+
+/* personnalisation classes bootstrap */
+
+.bg-success {
+  background-color: #d46363 !important; /* Red color */
+}
+
+.btn-primary {
+  background-color: #cf4a4a; /* Red color */
+  border-color: #a12929; /* Darker red for border */
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #a12929; /* Darker red on hover */
+  border-color: #870f0f; /* Even darker red for border on hover */
+}
+
+.table-hover tbody tr:hover {
+  font-weight: bolder;
+  background-color: #fbd6d6; /* Light red on hover */
+}
+
+.page-link {
+  color: #cf4a4a; /* Red color */
+}
+
+.page-item.active .page-link {
+  background-color: #cf4a4a; /* Red color for active page link */
+}
+
+.page-item.disabled .page-link {
+  color: #cf4a4a; /* Red color for disabled page link */
+}
+
+
+/* personnalisation html */
+body {
+  padding-top: 70px;
+}
+
+h1 {
+  text-align: center;
+  text-shadow: 2px 2px 5px #cf4a4a; /* Red color for text shadow */
+}
+
+/* classes Maya */
+
+.bg-entete {
+  background-color: #ef9a9a; /* Light red */
+}
+
+.contenu {
+  background-color: #ffebee; /* Very light red */
+  border: 2px solid #cf4a4a; /* Red color for border */
+  border-radius: 6px;
+  line-height: 40px;
+  padding: 10px;
+}
+
+.contenu-blanc {
+  background-color: white;
+  border: 2px solid #cf4a4a; /* Red color for border */
+  border-radius: 6px;
+  line-height: 40px;
+  padding: 10px;
+}
+
+.conteneur {
+  background-color: #ffebee; /* Very light red */
+  border: 2px solid #cf4a4a; /* Red color for border */
+  border-radius: 6px;
+  line-height: 25px;
+  font-family: Arial;
+  color: #bf8c8c; /* Light red for text color */
+  padding: 20px;
+  width: 300px;
+  margin: 0 auto;
+  box-shadow: 5px 5px 10px #cf4a4a; /* Red color for box shadow */
+}
+
+h2 {
+  text-align: center;
+  text-shadow: 2px 2px 5px #cf4a4a; /* Red color for text shadow */
+}
+
+.temps-icone {
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
+.temps-previsions {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+span.temperature {
+  margin-left: 15px;
+}

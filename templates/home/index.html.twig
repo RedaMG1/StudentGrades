@@ -1,0 +1,76 @@
+{% extends 'home.html.twig' %}
+
+{% block title %}Hello HomeController!
+{% endblock %}
+
+{% block body %}
+
+<!-- Statistics Section -->
+<section id="statistics" class="py-5">
+	<div class="container">
+		<h2 class="text-center mb-4 home-title">Website Statistics</h2>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="home-card1 text-center hover">
+					{% if not users.items is same as ([]) %}
+						<div class="card-body">
+							<h3 class="home-card-title">Users</h3>
+							<p class="home-card-text">Total Users:
+								{{ users.getTotalItemCount }}</p>
+						</div>
+					{% else %}
+						<p class="home-card-text">Total Users: 0</p>
+					{% endif %}
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="home-card2 text-center hover">
+					<div class="card-body">
+						<h3 class="home-card-title">Student of the month</h3>
+						<p class="home-card-text">Student name :
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="home-card3 text-center hover">
+					<div class="card-body">
+						<h3 class="home-card-title">Infos</h3>
+						<p class="home-card-text">Birth day</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Contact Form Section -->
+<section id="contact" class="py-5">
+	{# <div class="container">
+		<h2 class="text-center mb-4 home-title">Contact Us</h2>
+		<div class="row justify-content-center">
+			<div class="col-md-6">
+				<form class="home-form">
+					<div class="mb-3">
+						<label for="name" class="home-form-label">Your Name</label>
+						<input type="text" class="home-form-control" id="name" name="name" required>
+					</div>
+					<div class="mb-3">
+						<label for="email" class="home-form-label">Your Email</label>
+						<input type="email" class="home-form-control" id="email" name="email" required>
+					</div>
+					<div class="mb-3">
+						<label for="message" class="home-form-label">Message</label>
+						<textarea class="home-form-control" id="message" name="message" rows="4" required></textarea>
+					</div>
+					<button type="submit" class="home-button">Submit</button>
+				</form>
+
+			</div>
+		</div>
+	</div> #}
+	 {# {% include "contact/index.html.twig" %} #}
+</section>
+<style>
+
+	{% endblock %}
